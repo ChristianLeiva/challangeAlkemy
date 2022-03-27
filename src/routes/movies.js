@@ -4,12 +4,6 @@ const Movie = require('../../database/models/movies')
 const Genre = require('../../database/models/genre')
 const Sequelize = require('sequelize')
 
-// router.get('/', async (req, res) => {
-//   const data = await Movie.findAll()
-//   let result = JSON.stringify(data, ['titulo', 'fecha_creacion', 'imagen'])
-//   res.send(result)
-// })
-
 //find movies
 router.get('/', async (req, res) => {
   const title = req.query.title
